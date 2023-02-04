@@ -17,9 +17,9 @@
   "author": "Ajmal Ali",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AjmalAli10/namsteReact_6/issues"
+    "url": "https://github.com/AjmalAli10/namsteReact_8/issues"
   },
-  "homepage": "https://github.com/AjmalAli10/namsteReact_6#readme",
+  "homepage": "https://github.com/AjmalAli10/namsteReact_8#readme",
   "devDependencies": {
     "buffer": "^5.7.1",
     "parcel": "^2.8.3",
