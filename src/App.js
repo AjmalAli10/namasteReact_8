@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestuarantMenu from "./components/RestuarantMenu";
+import Profile from "./components/Profile";
 import "./App.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // I need AppLayout to Structure my Components 
@@ -39,7 +40,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
         </div>
     )
 };
-// ON certain path whatever you want load give it too element or errorElement 
+// ON certain path whatever you want load give it too element or errorElement
 const appRouter = createBrowserRouter([
     {
         path: "/",
@@ -52,7 +53,19 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <About />
+                element: <About />,
+                children:[
+                    {
+                        path: "profile", /**
+                                            "/profile" -> mean below
+                                            localHost123:about/profile 
+
+                                            "profile" => mean below
+                                           
+                                         */
+                        element: <Profile />
+                    }
+                ]
             },
             {
                 path: "restuarant/:id",
@@ -64,7 +77,7 @@ const appRouter = createBrowserRouter([
             }
         ]
     }
-])
+]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "let's get Classy",
   "scripts": {
+    "dev": "parcel public/index.html --port 1235",
     "start": "parcel public/index.html",
     "build": "parcel public/index.html",
     "test": "jest"
